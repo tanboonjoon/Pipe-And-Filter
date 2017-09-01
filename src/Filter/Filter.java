@@ -1,6 +1,6 @@
-package Filter;
+package filter;
 
-import Pipe.Pipe;
+import pipe.Pipe;
 
 abstract public class Filter{
 	protected Pipe input;

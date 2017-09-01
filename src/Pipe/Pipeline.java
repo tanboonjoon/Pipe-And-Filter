@@ -1,9 +1,9 @@
-package Pipe;
+package pipe;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Filter.Filter;
+import filter.Filter;
 
 public class Pipeline {
 	private List<Filter> filters;
