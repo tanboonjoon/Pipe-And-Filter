@@ -7,7 +7,7 @@ import pipe.Pipe;
 public class CircularShift extends Filter{
 	private HashSet<String> stopWords;
 
-	public CircularShift(Pipe<String> input, Pipe<String> output) {
+	public CircularShift(Pipe input, Pipe output) {
 		super(input, output);
 	}
 

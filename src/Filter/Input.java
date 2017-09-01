@@ -13,7 +13,6 @@ public class Input extends Filter{
 	private final static int ZERO_IGNORE_WORD = 0;
 	private HashSet<String> ignoreWordSet;
 	private Scanner reader;
-	private Scanner scn;
 	
 	public Input(Pipe<String> output) {
 		super(null, output);

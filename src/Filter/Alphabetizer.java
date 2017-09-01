@@ -8,7 +8,9 @@ import pipe.Pipe;
 public class Alphabetizer extends Filter{
 	
 	private SortedSet<String> sortedWords;
-	public Alphabetizer(Pipe<String> input, Pipe<SortedSet<String>> output) {
+	
+	@SuppressWarnings("rawtypes")
+	public Alphabetizer(Pipe input, Pipe output) {
 		super(input, output);
 	}
 

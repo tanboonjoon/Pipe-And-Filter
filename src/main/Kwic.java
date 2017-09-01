@@ -7,7 +7,6 @@ import filter.CircularShift;
 import filter.Input;
 import filter.Output;
 import pipe.Pipe;
-import pipe.Pipeline;
 
 public class Kwic {
 	public static void main(String[] args) {
@@ -39,13 +38,11 @@ public class Kwic {
 		Alphabetizer alpha = new Alphabetizer(circularToAlpha, alphaToOutput);
 		Output output = new Output(alphaToOutput);
 		
-		Pipeline pipeLine = new Pipeline();
-		pipeLine.addFilter(input)
-				.addFilter(circularShift)
-				.addFilter(alpha)
-				.addFilter(output);
 		while (true) {
-			pipeLine.run();
+			input.run();
+			circularShift.run();
+			alpha.run();
+			output.run();
 		}
 	}
 

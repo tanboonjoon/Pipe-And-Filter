@@ -5,7 +5,7 @@ import java.util.SortedSet;
 import pipe.Pipe;
 
 public class Output extends Filter{
-	public Output(Pipe<SortedSet<String>> input) {
+	public Output(Pipe input) {
 		super(input, null);
 	}
 
